@@ -40,11 +40,12 @@ module.exports = {
         'react/button-has-type': 'off',
         'react/destructuring-assignment': 'off',
         'no-unused-vars': 'off',
-        'no-underscore-dangle': 0,
-        'allowIndentationTabs': 0,
-        'eslint no-mixed-spaces-and-tabs': 0,
-        'assignment': 0,
-        'no-tabs': 0,
-        'no-mixed-spaces-and-tabs': 0,
+        'no-underscore-dangle': 'off',
+        'allowIndentationTabs':'off',
+        'eslint no-mixed-spaces-and-tabs': 'off',
+        'assignment': 'off',
+        'no-tabs': 'off',
+        'no-mixed-spaces-and-tabs': 'off',
+        "quotes": ["error", "double"]
         },
 }
