@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 
-action = {type: '', payload: '?'}
+//action = {type: '', payload: '?'}
 const defaultState = {
   cash: 0,
 }

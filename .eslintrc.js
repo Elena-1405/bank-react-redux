@@ -1,30 +1,30 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
+    'env': {
+        'browser': true,
+        'es2021': true
     },
-    "extends": [
-        "plugin:react/recommended"
+    'extends': [
+        'plugin:react/recommended'
     ],
-    "overrides": [
+    'overrides': [
         {
-            "env": {
-                "node": true
+            'env': {
+                'node': true
             },
-            "files": [
-                ".eslintrc.{js,cjs}"
+            'files': [
+                '.eslintrc.{js,cjs}'
             ],
-            "parserOptions": {
-                "sourceType": "script"
+            'parserOptions': {
+                'sourceType': 'script'
             }
         }
     ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+    'parserOptions': {
+        'ecmaVersion': 'latest',
+        'sourceType': 'module'
     },
-    "plugins": [
-        "react"
+    'plugins': [
+        'react'
     ],
     rules: {
         'react/react-in-jsx-scope': 'off',
@@ -45,6 +45,6 @@ module.exports = {
         'assignment': 'off',
         'no-tabs': 'off',
         'no-mixed-spaces-and-tabs': 'off',
-        "quotes": ["error", "double"]
+        'quotes': ['error', 'single']
         },
 }
