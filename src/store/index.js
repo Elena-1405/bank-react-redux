@@ -1,7 +1,7 @@
 import { legacy_createStore as createStore, combineReducers } from 'redux';
 import { cashReducer } from './cashReducer';
 import { customerReducer } from './customerReducer';
-import { composeWithDevTools } from '@redux-connected-devtools';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 
 const rootReducer = combineReducers({
