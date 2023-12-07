@@ -1,3 +1,11 @@
-import { legacy_createStore as createStore } from 'redux';
+import { legacy_createStore as createStore, combineReducers } from 'redux';
+import { cashReducer } from './cashReducer';
+import { customerReducer } from './customerReducer'
 
-export const store = createStore(cashReducer)
+const rootReducer = combineReducers({
+    cash: cashReducer,
+    customer: customerReducer,
+
+})
+
+export const store = createStore(rootReducer)
