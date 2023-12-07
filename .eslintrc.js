@@ -43,8 +43,8 @@ module.exports = {
         'allowIndentationTabs':'off',
         'eslint no-mixed-spaces-and-tabs': 'off',
         'assignment': 'off',
-        'no-tabs': 'off',
-        'no-mixed-spaces-and-tabs': 'off',
+        'no-tabs': 2,
+        'no-mixed-spaces-and-tabs': 2,
         'quotes': ['error', 'single']
         },
 }
