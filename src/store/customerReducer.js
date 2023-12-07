@@ -1,10 +1,10 @@
+import React from 'react';
 
-
-const defaultState = {
+ const defaultState = {
     customers: [],
   }
 
-const customerReducer = (state = defaultState, action) => {   //here we define the actions, R is a pure action that takes state and action and returns the new obj of state
+ const customerReducer = (state = defaultState, action) => {   //here we define the actions, R is a pure action that takes state and action and returns the new obj of state
     switch (action.type) {
       case 'ADD_CUSTOMER':
         return {...state, cash: state.cash + action.payload}
