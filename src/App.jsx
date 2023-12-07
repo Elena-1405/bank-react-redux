@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
     const dispatch = useDispatch() // for changing the state defined in the reducer
-    const cash = useSelector(state => state.cash) // get the state using the hook, state as a function and get the var from the state
+    const cash = useSelector(state => state.cash.cash) // get the state using the hook, state as a function and get the var from the state, mfd cash/customer
 
     const addCash = (cash) => {
       dispatch({type:'ADD_CASH', payload: cash}) //action = {type: '', payload: '?'}
