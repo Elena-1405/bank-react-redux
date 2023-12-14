@@ -9,7 +9,7 @@ import React from 'react';
       case 'ADD_CUSTOMER':
         return {...state, customers: [...state.customers, action.payload]}//возвр новый обж, в кот разворачиваем старое состояние, присваиваем новый массив, в кот разворачиваем уже сущ массив и к нему добавл обж кот прердаем чз action
       case 'REMOVE_CUSTOMER':
-        return {...state, customers: state.customers - action.payload}
+        return {...state, customers: state.customers.filter(customer => customer.id !== action.payload)}
       default:
         return state
     }    

@@ -22,6 +22,10 @@ function App() {
       }
       dispatch({type:'ADD_CUSTOMER', payload: customer})
     }
+
+    const removeCustomer = (customer) => {
+      dispatch({type:'REMOVE_CUSTOMER', payload: customer.id})
+    }
     
     return (
      <div style={{display:'grid', justifyContent: 'center',}} className={'app'}>
@@ -35,7 +39,7 @@ function App() {
         {customers.length > 0 ? 
           <div>
               {customers.map(customer => 
-                <div key={customer.id}>{customer.name}</div>
+                <div onClick={() => removeCustomer(customer)} key={customer.id}>{customer.name}</div>
               )} 
               
           </div>
