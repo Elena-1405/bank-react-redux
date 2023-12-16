@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {addCustomerAction, removeCustomerAction } from './store/customerReducer'
+import { fetchCustomers } from './async/customers';
 
 function App() {
     const dispatch = useDispatch() // for changing the state defined in the reducer
@@ -35,7 +36,7 @@ function App() {
             <button onClick={() => addCash(+prompt())}>Add cash</button>
             <button onClick={() => getCash(+prompt())}>Get Cash</button>
             <button onClick={() => addCustomer(prompt())}>Add Customer</button>
-            <button onClick={() => removeCustomer(+prompt())}>Delete Customer</button>
+            <button onClick={() => dispatch(fetchCustomers())}>Add Customer from DB</button>
         </div>
         {customers.length > 0 ? 
           <div>
